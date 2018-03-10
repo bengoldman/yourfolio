@@ -1,0 +1,21 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only.d-5of7
+be seen on the Desktop.
+
+******************************************************************/
+
+.wrap {
+  width: 1040px;
+}
+
+//Blog styles
+
+#inner-content.blog-wrapper {
+	max-width: 1440px;
+	width: 90%;
+}

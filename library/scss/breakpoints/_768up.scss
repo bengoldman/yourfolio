@@ -1,0 +1,501 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {}
+
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	width: 760px;
+}
+
+/*********************
+Home Page
+*********************/
+
+.intro-copy {
+	width: 66%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*********************
+BLog
+*********************/
+
+.blog .entry-tittle {line-height: 5.625em;}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header {}
+
+	#logo {}
+
+
+	.skillz {
+	flex-direction: row;
+
+	li {
+		padding-right: 2.500rem; 
+			span { padding-left: 2.500rem; }
+	}
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.nav {
+	border: 0;
+	ul {
+		background:$black;
+		margin-top:0;
+	}
+	li {
+		float: left;
+		position: relative;
+
+		a {
+			border-bottom: 0;
+
+			/*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+			&:hover, &:focus {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+
+		&:first-child {}
+		&:last-child {}
+
+		/*
+		plan your menus and drop-downs wisely.
+		*/
+		ul.sub-menu,
+		ul.children {
+			margin-top: 0;
+			border: 1px solid #ccc;
+			border-top: 0;
+			position: absolute;
+			visibility: hidden;
+			z-index: 8999;
+
+			li {
+
+				a {
+					padding-left: 10px;
+					border-right: 0;
+					display: block;
+					width: 180px;
+					border-bottom: 1px solid #ccc;
+
+					&:hover,
+					&:focus {}
+
+					&:link {}
+				}
+
+				&:first-child {}
+
+				&:last-child {
+
+					a {
+						border-bottom: 0;
+					}
+				}
+
+				/*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/
+				ul {
+					top:0;
+					left:100%;
+				}
+			}
+
+			/* highlight sub-menu current page */
+			li.current-menu-item,
+			li.current_page_item,
+			li.current_page_ancestor {
+				a {}
+			}
+		}
+
+		/* showing sub-menus */
+		&:hover > ul {
+			top: auto;
+			visibility:visible;
+		}
+
+	} /* end .menu ul li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current_page_ancestor {
+		a {}
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+// desktop nav global
+
+	.main-navigation {float: right;}
+	.main-navigation ul.nav,
+		.main-navigation div.nav > ul {
+				//border-bottom: 1px solid #ededed;
+				//border-top: 1px solid #ededed;
+				display: inline-block !important;
+				width: 100%;
+		}
+		.main-navigation ul {
+				margin-right: 40px;
+				text-indent: 0;
+		}
+		.main-navigation li a,
+		.main-navigation li {
+				display: inline-block;
+				text-decoration: none;
+		}
+		.main-navigation li a {
+				border-bottom: 0;
+				color: white;
+				font-size: 1.125em;
+				text-transform: uppercase;
+				white-space: nowrap;
+				background: $black;
+				margin-top: 20px;
+				padding: 5px;
+				border: black 1px double;
+				border-radius: 5px;
+
+		}
+		.main-navigation li a:hover,
+		.main-navigation li a:focus {
+				color: $banana;
+		}
+		.main-navigation li {
+				margin: 0 40px 0 0;
+				margin-right: 15px;
+				position: relative;		
+		}
+		.main-navigation li ul {
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				top: 100%;
+				z-index: 1;
+				height: 1px;
+				width: 1px;
+				overflow: hidden;
+				clip: rect(1px, 1px, 1px, 1px);
+		}
+		.main-navigation li ul ul {
+				top: 0;
+				left: 100%;
+		}
+		.main-navigation ul li:hover > ul,
+		.main-navigation ul li:focus > ul,
+		.main-navigation .focus > ul {
+				border-left: 0;
+				clip: inherit;
+				overflow: inherit;
+				height: inherit;
+				width: inherit;
+		}
+		.main-navigation li ul li a {
+				background: #efefef;
+				display: block;
+				font-size: 11px;
+				font-size: 0.785714286rem;
+				line-height: 2.181818182;
+				padding: 8px 10px;
+				padding: 0.571428571rem 0.714285714rem;
+				width: 180px;
+				width: 12.85714286rem;
+				white-space: normal;
+		}
+		.main-navigation li ul li a:hover,
+		.main-navigation li ul li a:focus {
+				background: #e3e3e3;
+				color: #444;
+		}
+		.main-navigation .current-menu-item > a,
+		.main-navigation .current-menu-ancestor > a,
+		.main-navigation .current_page_item > a,
+		.main-navigation .current_page_ancestor > a {
+				color: $white;
+		}
+		.menu-toggle {
+				display: none;
+		}
+
+/*********************
+Posts
+*********************/
+
+		.big-title {
+			text-align: center;
+			font-size: 3.5rem;
+			font-weight: 700;
+		}
+
+		.small-title {
+			text-align: center;
+			font-weight: 400;
+			font-size: 2.2rem;
+		}
+
+
+
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+.sidebar {
+	margin-top: 2.2em;
+}
+
+	.widgettitle {
+		border-bottom: 2px solid #444;
+		margin-bottom: 0.75em;
+	}
+
+	.widget {
+		padding: 0 10px;
+		margin: 2.2em 0;
+
+		ul {
+			li {
+				margin-bottom: 0.75em;
+
+				&:first-child {}
+				&:last-child {}
+				a {}
+				/* deep nesting */
+
+				ul {
+					margin-top: 0.75em;
+					padding-left: 1em;
+				}
+			}
+		}
+	}
+
+
+	/* links widget */
+	.widget_links {}
+	.widget_links ul {}
+	.widget_links ul li {}
+	.widget_links ul li a {}
+
+	/* meta widget */
+	.widget_meta {}
+	.widget_meta ul {}
+	.widget_meta ul li {}
+	.widget_meta ul li a {}
+
+	/* pages widget */
+	.widget_pages {}
+	.widget_pages ul {}
+	.widget_pages ul li {}
+	.widget_pages ul li a {}
+
+	/* recent-posts widget */
+	.widget_recent_entries {}
+	.widget_recent_entries ul {}
+	.widget_recent_entries ul li {}
+	.widget_recent_entries ul li a {}
+
+	/* archives widget */
+	.widget_archive {}
+	.widget_archive ul {}
+	.widget_archive ul li {}
+	.widget_archive ul li a {}
+	.widget_archive select {}
+	.widget_archive option {}
+
+	/* tag-cloud widget */
+	.widget_links {}
+	.widget_links li:after {}
+	.widget_links li:before {}
+	.widget_tag_cloud {}
+	.widget_tag_cloud a {}
+	.widget_tag_cloud a:after {}
+	.widget_tag_cloud a:before {}
+
+	/* calendar widget */
+	.widget_calendar {}
+	#calendar_wrap {}
+	#calendar_wrap th {}
+	#calendar_wrap td {}
+	#wp-calendar tr td {}
+	#wp-calendar caption {}
+	#wp-calendar a {}
+	#wp-calendar #today {}
+	#wp-calendar #prev {}
+	#wp-calendar #next {}
+	#wp-calendar #next a {}
+	#wp-calendar #prev a {}
+
+	/* category widget */
+	.widget_categories {}
+	.widget_categories ul {}
+	.widget_categories ul li {}
+	.widget_categories ul ul.children {}
+	.widget_categories a {}
+	.widget_categories select{}
+	.widget_categories select#cat {}
+	.widget_categories select.postform {}
+	.widget_categories option {}
+	.widget_categories .level-0 {}
+	.widget_categories .level-1 {}
+	.widget_categories .level-2 {}
+	.widget_categories .level-3 {}
+
+	/* recent-comments widget */
+	.recentcomments {}
+	#recentcomments {}
+	#recentcomments li {}
+	#recentcomments li a {}
+	.widget_recent_comments {}
+
+	/* search widget */
+	#searchform {}
+	.widget_search {}
+	.screen-reader-text {}
+
+	/* text widget */
+	.textwidget {}
+	.widget_text {}
+	.textwidget p {}
+
+
+/*********************
+FOOTER STYLES
+*********************/
+
+/*
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
+.footer-links {
+	ul {
+		li {
+			a {
+				&:hover {}
+			}
+			/*
+			be careful with the depth of your menus.
+			it's very rare to have multi-depth menus in
+			the footer.
+			*/
+			ul {}
+		}
+	}
+} /* end .footer-links */
+
+
+
+// Front page rotating cube
+
+// toggle the cube dimensions here.
+
+body {
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial;
+}
+
+
+/* 3D Cube */
+
+.separator {
+	margin-top: 40px;
+  }
+
+.space3d {
+    width: $cubeWidth-full;
+    height: $cubeHeight-full;
+	padding-top: 5px;
+	margin-right: 50px
+}
+
+._3dface {
+  line-height: $cubeWidth-full;
+
+	span {
+		font-size: 60px;
+		top: 150px;
+  }
+}
+
+._3dface--front {
+	width: $cubeWidth-full;
+	height: $cubeHeight-full;
+	transform: translate3d(0, 0, $cubeDepth-full / 2);
+  
+  }
+  
+  ._3dface--top {
+	width: $cubeWidth-full;
+	height: $cubeDepth-full;
+	transform: rotateX(90deg) translate3d(0, 0, $cubeHeight-full / 2);
+  }
+  
+  ._3dface--bottom {
+	width: $cubeWidth-full;
+	height: $cubeDepth-full;
+	transform: rotateX(-90deg) translate3d(0, 0, $cubeHeight-full / 2);
+  }
+  
+  ._3dface--left {
+	width: $cubeDepth-full;
+	height: $cubeHeight-full;
+	margin-left: -$cubeDepth-full / 2;
+	transform: rotateY(-90deg) translate3d(0, 0, $cubeWidth-full / 2);
+  }
+  
+  
+  ._3dface--right {
+	width: $cubeDepth-full;
+	height: $cubeHeight-full;
+	margin-left: -$cubeDepth-full / 2;
+	transform: rotateY(90deg) translate3d(0, 0, $cubeWidth-full / 2);
+  }
+  
+  
+  ._3dface--back {
+	width: $cubeWidth-full;
+	height: $cubeHeight-full;
+	transform: rotateY(180deg) translate3d(0, 0, $cubeDepth-full / 2);
+  }
