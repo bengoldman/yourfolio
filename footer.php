@@ -16,7 +16,16 @@
     					'depth' => 0,                                   // limit the depth of the nav
     					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
 						)); ?>
+						
 					</nav> 
+<!-- Social Media Icons -->
+					<div class="fa-wrapper">
+						<ul class="fa-menu">
+							<a href="#"><li><i class="fab fa-facebook"></i></li></a>
+							<a href="#"><li><i class="fab fa-instagram"></i></li></a>
+							<a href="#"><li><i class="fab fa-twitter-square"></i></li></a>
+						</ul>
+					</div>
 
 					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></p>
 					<p class="rightbrain">Created by <span><a href="http://totallymystuff.com/" target="_blank">Ben Goldman</a></span></p>
