@@ -8,6 +8,8 @@ just edit things like thumbnail sizes, header images,
 sidebars, comments, etc.
 */
 
+//add_image_size( 'category-thumb', 500, 9999 ); //300 pixels wide (and unlimited height)
+
 
 // LOAD BONES CORE (if you remove this, the theme will break)
 require_once( 'library/bones.php' );
@@ -74,10 +76,10 @@ if ( ! isset( $content_width ) ) {
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes
-add_image_size( 'bones-thumb-', 729, 449, true  );
+//add_image_size( 'bones-thumb-', 729, 449, true  );
 
 /*
-to add more sizes, simply copy a line from above
+to add more sizes, simply copy a line from above//
 and change the dimensions & name. As long as you
 upload a "featured image" as large as the biggest
 set width or height, all the other sizes will be
@@ -100,9 +102,9 @@ add_filter( 'image_size_names_choose', 'bones_custom_image_sizes' );
 
 function bones_custom_image_sizes( $sizes ) {
     return array_merge( $sizes, array(
-        'bones-thumb-730' => __('730px by 0px'),
-        'bones-thumb-600' => __('600px by 0px'),
-        'bones-thumb-300' => __('300px by 100px'),
+        'bones-thumb-730' => __(''),
+        'bones-thumb-600' => __(''),
+        'bones-thumb-300' => __(''),
     ) );
 }
 

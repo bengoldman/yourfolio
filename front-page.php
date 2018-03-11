@@ -9,6 +9,14 @@
 						<main id="main" class="intro-copy cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
+						<div class="skillz-wrapper">
+							<ul class="skillz">
+								<li>Actress</li>
+								<li>Singer</li>
+								<li>Magician</li>
+							</ul>
+						</div>
+						<div class="separator"></div>
 
 							<!-- CONTROLS -->
 
@@ -26,37 +34,37 @@
 							<div class="space3d">
 								<div class="_3dbox">
 									<div class="_3dface _3dface--front">
-										<a href="http://localhost:8888/portfolio/">
+										<a href="http://localhost:8888/yourfolio/">
 											<span>Home</span>
 										</a>
 									</div>
 
 									<div class="_3dface _3dface--top">
-										<a href="http://localhost:8888/portfolio/blog/">
+										<a href="http://localhost:8888/yourfolio/blog/">
 											<span>BLoG</span>
 										</a>
 									</div>
 
 									<div class="_3dface _3dface--bottom">
-										<a href="http://localhost:8888/portfolio/about/">
+										<a href="http://localhost:8888/yourfolio/about/">
 											<span>AbOUT</span>
 										</a>
 									</div>
 
 									<div class="_3dface _3dface--left">
-										<a href="http://localhost:8888/portfolio/">
+										<a href="http://localhost:8888/yourfolio/">
 											<span>Click Me</span>
 										</a>
 									</div>
 
 									<div class="_3dface _3dface--right">
-										<a href="http://localhost:8888/portfolio/blog/">
+										<a href="http://localhost:8888/yourfolio/blog/">
 											<span>Click Me</span>
 										</a>
 									</div>
 
 									<div class="_3dface _3dface--back">
-										<a href="http://localhost:8888/portfolio/about/">
+										<a href="http://localhost:8888/yourfolio/about/">
 											<span>Click Me</span>
 										</a>
 									</div>
@@ -70,7 +78,7 @@
 
                                   <!--  <div class="front-intro" itemprop="articleBody">
 
-										<h1>Ben Goldman - Creative Adventurer</h1>
+										<h1>/h1>
 
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio aenean sed adipiscing diam donec. Mi proin sed libero enim. Molestie at elementum eu facilisis sed odio morbi. Quisque egestas diam in arcu cursus euismod quis viverra. Duis at consectetur lorem donec massa. Ultrices neque ornare aenean euismod elementum nisi. Dolor sit amet consectetur adipiscing elit pellentesque. Habitant morbi tristique senectus et netus et malesuada. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Enim sed faucibus turpis in eu. Sed euismod nisi porta lorem mollis aliquam. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Odio eu feugiat pretium nibh ipsum consequat nisl. Enim blandit volutpat maecenas volutpat blandit aliquam. In hac habitasse platea dictumst. Imperdiet dui accumsan sit amet nulla facilisi morbi.
 	</p>

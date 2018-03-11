@@ -13,9 +13,208 @@ be seen on the Desktop.
   width: 1040px;
 }
 
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.nav {
+	border: 0;
+	ul {
+		margin-top:0;
+	}
+	li {
+		float: left;
+		position: relative;
+
+		a {
+			border-bottom: 0;
+
+			/*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+			&:hover, &:focus {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+
+		&:first-child {}
+		&:last-child {}
+
+		/*
+		plan your menus and drop-downs wisely.
+		*/
+		ul.sub-menu,
+		ul.children {
+			margin-top: 0;
+			border: 1px solid #ccc;
+			border-top: 0;
+			position: absolute;
+			visibility: hidden;
+			z-index: 8999;
+
+			li {
+
+				a {
+					padding-left: 10px;
+					border-right: 0;
+					display: block;
+					width: 180px;
+					border-bottom: 1px solid #ccc;
+
+					&:hover,
+					&:focus {}
+
+					&:link {}
+				}
+
+				&:first-child {}
+
+				&:last-child {
+
+					a {
+						border-bottom: 0;
+					}
+				}
+
+				/*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/
+				ul {
+					top:0;
+					left:100%;
+				}
+			}
+
+			/* highlight sub-menu current page */
+			li.current-menu-item,
+			li.current_page_item,
+			li.current_page_ancestor {
+				a {}
+			}
+		}
+
+		/* showing sub-menus */
+		&:hover > ul {
+			top: auto;
+			visibility:visible;
+		}
+
+	} /* end .menu ul li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current_page_ancestor {
+		a {}
+	}  /* end current highlighters */
+
+} 
+
+	.main-navigation {float: right;}
+	.main-navigation ul.nav,
+		.main-navigation div.nav > ul {
+				//border-bottom: 1px solid #ededed;
+				//border-top: 1px solid #ededed;
+				display: inline-block !important;
+				width: 100%;
+		}
+		.main-navigation ul {
+				margin-right: 40px;
+				text-indent: 0;
+		}
+		.main-navigation li a,
+		.main-navigation li {
+				display: inline-block;
+				text-decoration: none;
+		}
+		.main-navigation li a {
+				border-bottom: 0;
+				color: $black;
+				font-size: 1.125em;
+				text-transform: uppercase;
+				white-space: nowrap;
+				background: $white;
+				margin-top: 20px;
+
+		}
+		.main-navigation li a:hover,
+		.main-navigation li a:focus {
+				color: $link-hover;
+		}
+		.main-navigation li {
+				margin-right: 15px;
+				position: relative;
+		}
+		.main-navigation li ul {
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				top: 100%;
+				z-index: 1;
+				height: 1px;
+				width: 1px;
+				overflow: hidden;
+				clip: rect(1px, 1px, 1px, 1px);
+		}
+		.main-navigation li ul ul {
+				top: 0;
+				left: 100%;
+		}
+		.main-navigation ul li:hover > ul,
+		.main-navigation ul li:focus > ul,
+		.main-navigation .focus > ul {
+				border-left: 0;
+				clip: inherit;
+				overflow: inherit;
+				height: inherit;
+				width: inherit;
+		}
+		.main-navigation li ul li a {
+				background: #efefef;
+				display: block;
+				font-size: 11px;
+				font-size: 0.785714286rem;
+				line-height: 2.181818182;
+				padding: 8px 10px;
+				padding: 0.571428571rem 0.714285714rem;
+				width: 180px;
+				width: 12.85714286rem;
+				white-space: normal;
+		}
+		.main-navigation li ul li a:hover,
+		.main-navigation li ul li a:focus {
+				background: #e3e3e3;
+				color: #444;
+		}
+		.main-navigation .current-menu-item > a,
+		.main-navigation .current-menu-ancestor > a,
+		.main-navigation .current_page_item > a,
+		.main-navigation .current_page_ancestor > a {
+				color: $black;
+		}
+// Nav Mobile Toggle
+.menu-toggle {
+	display: none;
+}
+
+
 //Blog styles
 
 #inner-content.blog-wrapper {
 	max-width: 1440px;
 	width: 90%;
+}
+
+/*********************
+Pages
+*********************/
+
+// About page
+.about-pic img {
+	width: 35%;
 }

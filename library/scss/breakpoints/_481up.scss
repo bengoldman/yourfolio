@@ -31,6 +31,14 @@ Homepage
 	margin-right: auto;
 }
 
+.home #logo {
+	float: none;
+}
+
+#logo {
+	float: left;
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -81,6 +89,21 @@ NAVIGATION STYLES
 		} /* end .menu ul */
 	} /* end .menu */
 
+
+/*********************
+PAGES
+*********************/
+
+// About page
+
+.about-pic img {
+	width: 55%
+}
+
+
+
+
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -125,28 +148,6 @@ do they need tweaking?
 
 //Unique nav footer styles
 
-#menu-footer {
-	flex-direction: row;
-
-	li.menu-item {
-		padding-right: 2.500rem;
-	}
-	li {
-		&:last-child a {
-			padding-right: 0rem;
-		}
-	}
-	a {
-	border-bottom: 0;
-	color: white;
-	text-transform: uppercase;
-	white-space: nowrap;
-	background: $black;
-	padding: 5px;
-	text-decoration: none;
-
-		&:hover {
-		text-decoration: underline;
-		}
-	}
+.skillz {
+	justify-content: space-evenly;
 }

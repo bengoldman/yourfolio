@@ -125,7 +125,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 h1, .h1 {
 	font-size: 2.5em;
 	line-height: 1.333em;
-	color: $navy;
+	color: $link-color;
 	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
@@ -155,13 +155,13 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 
-.blog .parallax {
+/*.blog .parallax {
 	height: 100%; 
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
+}*/
 
 
 .blog header.header  {
@@ -173,21 +173,24 @@ HEADER STYLES
 			height: 550px; }
 }
 //$black cover no repeat  style="background-image: url(http://localhost:8888/kayak/wp-content/uploads/2018/02/pexels-photo-461595.jpeg);"
+
+
 	#logo {
 		//display: none; hides logo text from header
-		margin: 0.75em 0;
-
+		margin: 0 auto 5px auto;
+		font-size: 2.2rem;
 		a {
-			color: $black;
-		}
+				color: $black;
+			}
 	}
+
 
 /*********************
 NAVIGATION STYLES
 **********************/
 
 .main-navigation {
-	text-align: center;
+	text-align: right;
 }
 .main-navigation a {
 	text-decoration: none;
@@ -201,7 +204,7 @@ NAVIGATION STYLES
 }
 
 .main-navigation li a {
-	color: white;
+	color: $white;
 	margin: 0 5px;
 	padding: 0 auto;
 	text-decoration: none;
@@ -221,17 +224,19 @@ NAVIGATION STYLES
 	display: inline-block;
 }
 
-@media screen and (max-width: 767px) {
+
+// MEDIA QUERY THAT APPLIES STYLES TO MENU TOGGLE FROM 1030PX DOWN TO PHONE
+
+@media screen and (max-width: 1030px) {
 	.main-navigation .menu-main-container {
 		background: $black;
-		opacity: 0.7;
 		padding: 0 0.625rem;
 	}
 	.menu-toggle {
 		background: transparent;
 		border: none;
-		color: $white;
-		font-size: 1.250rem;
+		color: $black;
+		font-size: 1.4rem;
 		margin-top: 0.625rem;
 	}
 	nav .toggled-on li {
@@ -241,19 +246,19 @@ NAVIGATION STYLES
 		position: relative;
 		padding-left: 1.25em;
 	  }
-	  .box-shadow-menu:before {
+	.box-shadow-menu:before {
 		content: "";
 		position: absolute;
 		left: 0;
 		top: 0.25em;
 		width: 1em;
 		height: 0.15em;
-		background: $white;
-		box-shadow:  0 0.25em 0 0 $white, 0 0.5em 0 0 $white;
-	  }
+		background: $black;
+		box-shadow:  0 0.25em 0 0 $black, 0 0.5em 0 0 $black;
+	}
 }
 
-//Unuique Footer Styles
+//Unique Footer Styles
 
 #menu-footer {
 		display: flex;
@@ -543,7 +548,7 @@ Blog
 }
 
 .blog-main article {
-	box-shadow: 5px 8px 15px -2px;
+
 	border-color: $alert-blue;
 }
 
@@ -571,7 +576,7 @@ Blog
 }
 
 .hentry {
-	box-shadow: 3px 12px 25px -1px;
+	
 }
 
 
@@ -581,16 +586,29 @@ Pages
 
 .skillz {
 	display: flex;
-	flex-direction: column;
-	display: flex;
 	align-items: center;
-	justify-content: center;
-	font-size: 25px;
+	justify-content: space-around;
+	font-size: 20px;
 	margin:  0;
+}
 
-	li {
-			span { padding-left: 0.5rem; }
-	 }
+//About Page
+
+.about-pic img {
+	width: 75%;
+	height: auto;
+	box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.48), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
+}
+
+.page-id-6 {
+	article {
+		border: none;
+	}
+	.d-5of7 {
+		float: none;
+		padding-right: none;
+		width: 100%;
+	}
 }
 
 /*********************
@@ -626,7 +644,7 @@ POSTS & CONTENT STYLES
 			border: 1px solid $border-color;
 
 			header {
-				border-bottom: 1px solid $light-gray;
+				border-bottom: 1px solid $meta-gray;
 				padding: 1.5em;
 			}
 

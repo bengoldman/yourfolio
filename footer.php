@@ -2,7 +2,7 @@
 
 				<div id="inner-footer" class="wrap cf">
 
-					<!--<nav role="navigation">
+					<nav role="navigation">
 						<?php wp_nav_menu(array(
     					'container' => 'div',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
     					'container_class' => 'footer-links cf',         // class of container (should you choose to use it)
@@ -16,7 +16,7 @@
     					'depth' => 0,                                   // limit the depth of the nav
     					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
 						)); ?>
-					</nav> -->
+					</nav> 
 
 					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></p>
 					<p class="rightbrain">Created by <span><a href="http://totallymystuff.com/" target="_blank">Ben Goldman</a></span></p>

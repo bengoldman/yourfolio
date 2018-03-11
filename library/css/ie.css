@@ -191,6 +191,12 @@ Homepage
   margin-left: auto;
   margin-right: auto; }
 
+.home #logo {
+  float: none; }
+
+#logo {
+  float: left; }
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -212,6 +218,12 @@ NAVIGATION STYLES
         */ }
 
 /* end .menu */
+/*********************
+PAGES
+*********************/
+.about-pic img {
+  width: 55%; }
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -241,22 +253,8 @@ check your menus here. do they look good?
 do they need tweaking?
 */
 /* end .footer-links */
-#menu-footer {
-  flex-direction: row; }
-  #menu-footer li.menu-item {
-    padding-right: 2.500rem; }
-  #menu-footer li:last-child a {
-    padding-right: 0rem; }
-  #menu-footer a {
-    border-bottom: 0;
-    color: white;
-    text-transform: uppercase;
-    white-space: nowrap;
-    background: #323944;
-    padding: 5px;
-    text-decoration: none; }
-    #menu-footer a:hover {
-      text-decoration: underline; }
+.skillz {
+  justify-content: space-evenly; }
 
 /******************************************************************
 Site Name:
@@ -297,162 +295,22 @@ BLog
 /*********************
 HEADER STYLES
 *********************/
+.header #logo {
+  font-size: 3.5rem; }
+
 .skillz {
-  flex-direction: row; }
-  .skillz li {
+  font-size: 25px;
+  justify-content: center; }
+  .skillz li, .skillz li:nth-child(2) {
     padding-right: 2.500rem; }
-    .skillz li span {
-      padding-left: 2.500rem; }
+  .skillz li:nth-child(3) {
+    padding-right: 0; }
 
 /*********************
-NAVIGATION STYLES
+Pages
 *********************/
-.nav {
-  border: 0;
-  /* end .menu ul li */
-  /* highlight current page */
-  /* end current highlighters */ }
-  .nav ul {
-    background: #323944;
-    margin-top: 0; }
-  .nav li {
-    float: left;
-    position: relative;
-    /*
-    plan your menus and drop-downs wisely.
-    */
-    /* showing sub-menus */ }
-    .nav li a {
-      border-bottom: 0;
-      /*
-      you can use hover styles here even though this size
-      has the possibility of being a mobile device.
-      */ }
-      .nav li a:hover, .nav li a:focus {
-        color: #fff;
-        text-decoration: none; }
-    .nav li ul.sub-menu,
-    .nav li ul.children {
-      margin-top: 0;
-      border: 1px solid #ccc;
-      border-top: 0;
-      position: absolute;
-      visibility: hidden;
-      z-index: 8999;
-      /* highlight sub-menu current page */ }
-      .nav li ul.sub-menu li,
-      .nav li ul.children li {
-        /*
-        if you need to go deeper, go nuts
-        just remember deeper menus suck
-        for usability. k, bai.
-        */ }
-        .nav li ul.sub-menu li a,
-        .nav li ul.children li a {
-          padding-left: 10px;
-          border-right: 0;
-          display: block;
-          width: 180px;
-          border-bottom: 1px solid #ccc; }
-        .nav li ul.sub-menu li:last-child a,
-        .nav li ul.children li:last-child a {
-          border-bottom: 0; }
-        .nav li ul.sub-menu li ul,
-        .nav li ul.children li ul {
-          top: 0;
-          left: 100%; }
-    .nav li:hover > ul {
-      top: auto;
-      visibility: visible; }
-
-/* end .nav */
-.main-navigation {
-  float: right; }
-
-.main-navigation ul.nav,
-.main-navigation div.nav > ul {
-  display: inline-block !important;
-  width: 100%; }
-
-.main-navigation ul {
-  margin-right: 40px;
-  text-indent: 0; }
-
-.main-navigation li a,
-.main-navigation li {
-  display: inline-block;
-  text-decoration: none; }
-
-.main-navigation li a {
-  border-bottom: 0;
-  color: white;
-  font-size: 1.125em;
-  text-transform: uppercase;
-  white-space: nowrap;
-  background: #323944;
-  margin-top: 20px;
-  padding: 5px;
-  border: black 1px double;
-  border-radius: 5px; }
-
-.main-navigation li a:hover,
-.main-navigation li a:focus {
-  color: #F2C777; }
-
-.main-navigation li {
-  margin: 0 40px 0 0;
-  margin-right: 15px;
-  position: relative; }
-
-.main-navigation li ul {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 100%;
-  z-index: 1;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
-
-.main-navigation li ul ul {
-  top: 0;
-  left: 100%; }
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li:focus > ul,
-.main-navigation .focus > ul {
-  border-left: 0;
-  clip: inherit;
-  overflow: inherit;
-  height: inherit;
-  width: inherit; }
-
-.main-navigation li ul li a {
-  background: #efefef;
-  display: block;
-  font-size: 11px;
-  font-size: 0.785714286rem;
-  line-height: 2.181818182;
-  padding: 8px 10px;
-  padding: 0.571428571rem 0.714285714rem;
-  width: 180px;
-  width: 12.85714286rem;
-  white-space: normal; }
-
-.main-navigation li ul li a:hover,
-.main-navigation li ul li a:focus {
-  background: #e3e3e3;
-  color: #444; }
-
-.main-navigation .current-menu-item > a,
-.main-navigation .current-menu-ancestor > a,
-.main-navigation .current_page_item > a,
-.main-navigation .current_page_ancestor > a {
-  color: #fff; }
-
-.menu-toggle {
-  display: none; }
+.about-pic img {
+  width: 55%; }
 
 /*********************
 Posts
@@ -501,6 +359,13 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
+#menu-footer {
+  flex-direction: row; }
+  #menu-footer li.menu-item {
+    padding-right: 2.500rem; }
+  #menu-footer li:last-child a {
+    padding-right: 0rem; }
+
 /*
 you'll probably need to do quite a bit
 of overriding here if you styled them for
@@ -581,9 +446,159 @@ be seen on the Desktop.
 .wrap {
   width: 1040px; }
 
+/*********************
+NAVIGATION STYLES
+*********************/
+.nav {
+  border: 0;
+  /* end .menu ul li */
+  /* highlight current page */
+  /* end current highlighters */ }
+  .nav ul {
+    margin-top: 0; }
+  .nav li {
+    float: left;
+    position: relative;
+    /*
+    plan your menus and drop-downs wisely.
+    */
+    /* showing sub-menus */ }
+    .nav li a {
+      border-bottom: 0;
+      /*
+      you can use hover styles here even though this size
+      has the possibility of being a mobile device.
+      */ }
+      .nav li a:hover, .nav li a:focus {
+        color: #fff;
+        text-decoration: none; }
+    .nav li ul.sub-menu,
+    .nav li ul.children {
+      margin-top: 0;
+      border: 1px solid #ccc;
+      border-top: 0;
+      position: absolute;
+      visibility: hidden;
+      z-index: 8999;
+      /* highlight sub-menu current page */ }
+      .nav li ul.sub-menu li,
+      .nav li ul.children li {
+        /*
+        if you need to go deeper, go nuts
+        just remember deeper menus suck
+        for usability. k, bai.
+        */ }
+        .nav li ul.sub-menu li a,
+        .nav li ul.children li a {
+          padding-left: 10px;
+          border-right: 0;
+          display: block;
+          width: 180px;
+          border-bottom: 1px solid #ccc; }
+        .nav li ul.sub-menu li:last-child a,
+        .nav li ul.children li:last-child a {
+          border-bottom: 0; }
+        .nav li ul.sub-menu li ul,
+        .nav li ul.children li ul {
+          top: 0;
+          left: 100%; }
+    .nav li:hover > ul {
+      top: auto;
+      visibility: visible; }
+
+.main-navigation {
+  float: right; }
+
+.main-navigation ul.nav,
+.main-navigation div.nav > ul {
+  display: inline-block !important;
+  width: 100%; }
+
+.main-navigation ul {
+  margin-right: 40px;
+  text-indent: 0; }
+
+.main-navigation li a,
+.main-navigation li {
+  display: inline-block;
+  text-decoration: none; }
+
+.main-navigation li a {
+  border-bottom: 0;
+  color: #323944;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background: #fff;
+  margin-top: 20px; }
+
+.main-navigation li a:hover,
+.main-navigation li a:focus {
+  color: #d10e3c; }
+
+.main-navigation li {
+  margin-right: 15px;
+  position: relative; }
+
+.main-navigation li ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
+
+.main-navigation li ul ul {
+  top: 0;
+  left: 100%; }
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li:focus > ul,
+.main-navigation .focus > ul {
+  border-left: 0;
+  clip: inherit;
+  overflow: inherit;
+  height: inherit;
+  width: inherit; }
+
+.main-navigation li ul li a {
+  background: #efefef;
+  display: block;
+  font-size: 11px;
+  font-size: 0.785714286rem;
+  line-height: 2.181818182;
+  padding: 8px 10px;
+  padding: 0.571428571rem 0.714285714rem;
+  width: 180px;
+  width: 12.85714286rem;
+  white-space: normal; }
+
+.main-navigation li ul li a:hover,
+.main-navigation li ul li a:focus {
+  background: #e3e3e3;
+  color: #444; }
+
+.main-navigation .current-menu-item > a,
+.main-navigation .current-menu-ancestor > a,
+.main-navigation .current_page_item > a,
+.main-navigation .current_page_ancestor > a {
+  color: #323944; }
+
+.menu-toggle {
+  display: none; }
+
 #inner-content.blog-wrapper {
   max-width: 1440px;
   width: 90%; }
+
+/*********************
+Pages
+*********************/
+.about-pic img {
+  width: 35%; }
 
 /*
 you can call the larger styles if you want, but there's really no need
