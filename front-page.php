@@ -46,8 +46,8 @@
 									</div>
 
 									<div class="_3dface _3dface--bottom">
-										<a href="http://localhost:8888/yourfolio/reviews/">
-											<span>REVIEWS</span>
+										<a href="http://localhost:8888/yourfolio/testimonials/">
+											<span>MY FANS</span>
 										</a>
 									</div>
 

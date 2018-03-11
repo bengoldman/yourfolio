@@ -1257,6 +1257,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+#inner-content {
+  padding: 20px;
+  text-align: center; }
+
+.page-id-20 {
+  background: no-repeat url(http://localhost:8888/yourfolio/wp-content/uploads/2018/02/nyc-background.jpeg);
+  padding: 0; }
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -1380,6 +1388,7 @@ HEADER STYLES
 
 #logo {
   margin: 0 auto 5px auto;
+  text-align: center;
   font-size: 2.2rem; }
   #logo a {
     color: #323944; }
@@ -1567,16 +1576,10 @@ Homepage
   height: auto;
   border: #024959 solid 1px; }
 
-body {
-  color: #333;
-  padding: 20px;
-  text-align: center;
-  font-family: Arial; }
-
 .separator {
   margin-top: 40px; }
 
-/* 3D Cube */
+/* 3D Rotating Cube */
 .space3d {
   -webkit-perspective: 1000px;
           perspective: 1000px;
@@ -1610,12 +1613,16 @@ body {
   ._3dface a {
     display: block;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    color: #fff; }
+    ._3dface a:hover {
+      color: #d5edf8; }
   ._3dface span {
     font-size: 25px;
     position: absolute;
-    top: 80px;
-    color: #d5edf8; }
+    top: 80px; }
+    ._3dface span:hover {
+      text-decoration: underline; }
 
 ._3dface--front {
   width: 250px;
@@ -1747,21 +1754,107 @@ Pages
   font-size: 20px;
   margin: 0; }
 
+.fa-wrapper {
+  width: 200px;
+  margin: 0 auto; }
+
+.fa-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 30px;
+  margin: 0; }
+  .fa-menu a, .fa-menu a:visited {
+    color: #fff; }
+  .fa-menu a:hover {
+    color: #2980b9; }
+
 .about-pic img {
   width: 75%;
   height: auto;
   -webkit-box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.48), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.48), 0 6px 20px 0 rgba(0, 0, 0, 0.12); }
 
-.page-id-6 article {
+.page-id-6 article,
+.page-id-58 article,
+.page-id-51 article,
+.page-id-9 article {
   border: none; }
-.page-id-6 .d-5of7 {
+.page-id-6 .d-5of7,
+.page-id-58 .d-5of7,
+.page-id-51 .d-5of7,
+.page-id-9 .d-5of7 {
   float: none;
   padding-right: none;
   width: 100%; }
 
 .page-id-20 section {
   text-align: left; }
+  .page-id-20 section .field:hover {
+    border-color: red; }
+.page-id-20 input[type="submit"] {
+  background-color: #f01d4f;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 20px;
+  padding: 5px 25px; }
+.page-id-20 input[type="text"],
+.page-id-20 input[type="password"],
+.page-id-20 input[type="datetime"],
+.page-id-20 input[type="datetime-local"],
+.page-id-20 input[type="date"],
+.page-id-20 input[type="month"],
+.page-id-20 input[type="time"],
+.page-id-20 input[type="week"],
+.page-id-20 input[type="number"],
+.page-id-20 input[type="email"],
+.page-id-20 input[type="url"],
+.page-id-20 input[type="search"],
+.page-id-20 input[type="tel"],
+.page-id-20 input[type="color"],
+.page-id-20 select,
+.page-id-20 textarea,
+.page-id-20 .field {
+  border: 1px solid lightgray; }
+  .page-id-20 input[type="text"]:hover, .page-id-20 input[type="text"]:focus,
+  .page-id-20 input[type="password"]:hover,
+  .page-id-20 input[type="password"]:focus,
+  .page-id-20 input[type="datetime"]:hover,
+  .page-id-20 input[type="datetime"]:focus,
+  .page-id-20 input[type="datetime-local"]:hover,
+  .page-id-20 input[type="datetime-local"]:focus,
+  .page-id-20 input[type="date"]:hover,
+  .page-id-20 input[type="date"]:focus,
+  .page-id-20 input[type="month"]:hover,
+  .page-id-20 input[type="month"]:focus,
+  .page-id-20 input[type="time"]:hover,
+  .page-id-20 input[type="time"]:focus,
+  .page-id-20 input[type="week"]:hover,
+  .page-id-20 input[type="week"]:focus,
+  .page-id-20 input[type="number"]:hover,
+  .page-id-20 input[type="number"]:focus,
+  .page-id-20 input[type="email"]:hover,
+  .page-id-20 input[type="email"]:focus,
+  .page-id-20 input[type="url"]:hover,
+  .page-id-20 input[type="url"]:focus,
+  .page-id-20 input[type="search"]:hover,
+  .page-id-20 input[type="search"]:focus,
+  .page-id-20 input[type="tel"]:hover,
+  .page-id-20 input[type="tel"]:focus,
+  .page-id-20 input[type="color"]:hover,
+  .page-id-20 input[type="color"]:focus,
+  .page-id-20 select:hover,
+  .page-id-20 select:focus,
+  .page-id-20 textarea:hover,
+  .page-id-20 textarea:focus,
+  .page-id-20 .field:hover,
+  .page-id-20 .field:focus {
+    border: 3px solid #d5edf8; }
 
 /*********************
 POSTS & CONTENT STYLES
@@ -1817,6 +1910,10 @@ POSTS & CONTENT STYLES
   margin: 0; }
 
 /* entry content */
+.page-id-6 .entry-content {
+  width: 85%;
+  margin: 0 auto; }
+
 .entry-content {
   padding: 1.5em 1.5em 0;
   /*
@@ -2372,12 +2469,6 @@ you can add resource intensive styles.
     */ }
 
   /* end .footer-links */
-  body {
-    color: #333;
-    padding: 20px;
-    text-align: center;
-    font-family: Arial; }
-
   /* 3D Cube */
   .separator {
     margin-top: 40px; }
@@ -2534,7 +2625,7 @@ you can add resource intensive styles.
     font-size: 1.125em;
     text-transform: uppercase;
     white-space: nowrap;
-    background: #fff;
+    background: transparent;
     margin-top: 20px; }
 
   .main-navigation li a:hover,

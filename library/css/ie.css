@@ -379,12 +379,6 @@ mobile. Make sure to double check these!
   */ }
 
 /* end .footer-links */
-body {
-  color: #333;
-  padding: 20px;
-  text-align: center;
-  font-family: Arial; }
-
 /* 3D Cube */
 .separator {
   margin-top: 40px; }
@@ -529,7 +523,7 @@ NAVIGATION STYLES
   font-size: 1.125em;
   text-transform: uppercase;
   white-space: nowrap;
-  background: #fff;
+  background: transparent;
   margin-top: 20px; }
 
 .main-navigation li a:hover,
