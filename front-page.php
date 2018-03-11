@@ -35,37 +35,37 @@
 								<div class="_3dbox">
 									<div class="_3dface _3dface--front">
 										<a href="http://localhost:8888/yourfolio/">
-											<span>Home</span>
+											<span>HOME</span>
 										</a>
 									</div>
 
 									<div class="_3dface _3dface--top">
-										<a href="http://localhost:8888/yourfolio/blog/">
-											<span>BLoG</span>
+										<a href="http://localhost:8888/yourfolio/resume/">
+											<span>RESUME</span>
 										</a>
 									</div>
 
 									<div class="_3dface _3dface--bottom">
-										<a href="http://localhost:8888/yourfolio/about/">
-											<span>AbOUT</span>
+										<a href="http://localhost:8888/yourfolio/reviews/">
+											<span>REVIEWS</span>
 										</a>
 									</div>
 
 									<div class="_3dface _3dface--left">
-										<a href="http://localhost:8888/yourfolio/">
-											<span>Click Me</span>
+										<a href="http://localhost:8888/yourfolio/media">
+											<span>MEDIA</span>
 										</a>
 									</div>
 
 									<div class="_3dface _3dface--right">
-										<a href="http://localhost:8888/yourfolio/blog/">
-											<span>Click Me</span>
+										<a href="http://localhost:8888/yourfolio/about/">
+											<span>ABOUT ME</span>
 										</a>
 									</div>
 
 									<div class="_3dface _3dface--back">
-										<a href="http://localhost:8888/yourfolio/about/">
-											<span>Click Me</span>
+										<a href="http://localhost:8888/yourfolio/contact/">
+											<span>CONTACT Me</span>
 										</a>
 									</div>
 
