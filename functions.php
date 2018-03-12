@@ -8,6 +8,14 @@ just edit things like thumbnail sizes, header images,
 sidebars, comments, etc.
 */
 
+
+// Add Categories for Attachments
+function add_categories_for_attachments() {
+  register_taxonomy_for_object_type( 'category', 'attachment' );
+}
+add_action( 'init' , 'add_categories_for_attachments' );
+
+
 //add_image_size( 'category-thumb', 500, 9999 ); //300 pixels wide (and unlimited height)
 
 

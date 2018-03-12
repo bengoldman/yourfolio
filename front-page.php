@@ -41,7 +41,7 @@
 
 									<div class="_3dface _3dface--top">
 										<a href="http://localhost:8888/yourfolio/resume/">
-											<span>RESUME</span>
+											<span>HEADSHOT/RESUME</span>
 										</a>
 									</div>
 
@@ -65,7 +65,7 @@
 
 									<div class="_3dface _3dface--back">
 										<a href="http://localhost:8888/yourfolio/contact/">
-											<span>CONTACT Me</span>
+											<span>CONTACT</span>
 										</a>
 									</div>
 
