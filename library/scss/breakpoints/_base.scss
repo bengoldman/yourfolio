@@ -32,11 +32,6 @@ body {
     text-align: center;
 }
 
-//Contact Page
-.page-id-20 {
-	background: no-repeat url(http://localhost:8888/yourfolio/wp-content/uploads/2018/02/nyc-background.jpeg);
-	padding: 0;
-}
 
 /********************
 WORDPRESS BODY CLASSES
@@ -453,9 +448,10 @@ Homepage
   }
 
   span {
-    font-size: 25px;
+    font-size: 24px;
     position: absolute;
 	top: 80px;
+	left: 10px;
 	&:hover {
 		text-decoration: underline;
 	}
@@ -661,10 +657,53 @@ Pages
 	}
 }
 
+//Gallery page 
+
+.page-id-9 .grid-container {
+
+	margin: 0 auto;
+	max-width: 75%;
+	padding: 0 1rem;
+
+	.grid {
+
+		@media all and (min-width: 600px) { 
+
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			align-items: center;
+
+			.cell {
+				width: calc(50% - 2rem);
+				padding: 0 1rem;
+			}
+			 }
+			 
+		.cell {
+			
+			margin: 1rem 0;
+
+				img {
+
+					display: block;
+				}
+
+				.responsive-image {
+					max-width: 100%;
+				}
+			}
+		
+		}
+
+}
 
 //Contact page 
 
 .page-id-20 {
+
+	background: no-repeat url(http://localhost:8888/yourfolio/wp-content/uploads/2018/02/nyc-background.jpeg);
+	padding: 0;
 
 	section {
 
@@ -755,7 +794,7 @@ POSTS & CONTENT STYLES
 
 			footer {
 				padding: 1.5em;
-				border-top: 1px solid $light-gray;
+				//border-top: 1px solid $light-gray;
 
 				p {
 					margin: 0;

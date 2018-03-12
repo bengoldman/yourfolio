@@ -1261,10 +1261,6 @@ body {
   padding: 20px;
   text-align: center; }
 
-.page-id-20 {
-  background: no-repeat url(http://localhost:8888/yourfolio/wp-content/uploads/2018/02/nyc-background.jpeg);
-  padding: 0; }
-
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -1618,9 +1614,10 @@ Homepage
     ._3dface a:hover {
       color: #d5edf8; }
   ._3dface span {
-    font-size: 25px;
+    font-size: 24px;
     position: absolute;
-    top: 80px; }
+    top: 80px;
+    left: 10px; }
     ._3dface span:hover {
       text-decoration: underline; }
 
@@ -1793,68 +1790,100 @@ Pages
   padding-right: none;
   width: 100%; }
 
-.page-id-20 section {
-  text-align: left; }
-  .page-id-20 section .field:hover {
-    border-color: red; }
-.page-id-20 input[type="submit"] {
-  background-color: #f01d4f;
-  color: #fff;
-  font-size: 25px;
-  border-radius: 20px;
-  padding: 5px 25px; }
-.page-id-20 input[type="text"],
-.page-id-20 input[type="password"],
-.page-id-20 input[type="datetime"],
-.page-id-20 input[type="datetime-local"],
-.page-id-20 input[type="date"],
-.page-id-20 input[type="month"],
-.page-id-20 input[type="time"],
-.page-id-20 input[type="week"],
-.page-id-20 input[type="number"],
-.page-id-20 input[type="email"],
-.page-id-20 input[type="url"],
-.page-id-20 input[type="search"],
-.page-id-20 input[type="tel"],
-.page-id-20 input[type="color"],
-.page-id-20 select,
-.page-id-20 textarea,
-.page-id-20 .field {
-  border: 1px solid lightgray; }
-  .page-id-20 input[type="text"]:hover, .page-id-20 input[type="text"]:focus,
-  .page-id-20 input[type="password"]:hover,
-  .page-id-20 input[type="password"]:focus,
-  .page-id-20 input[type="datetime"]:hover,
-  .page-id-20 input[type="datetime"]:focus,
-  .page-id-20 input[type="datetime-local"]:hover,
-  .page-id-20 input[type="datetime-local"]:focus,
-  .page-id-20 input[type="date"]:hover,
-  .page-id-20 input[type="date"]:focus,
-  .page-id-20 input[type="month"]:hover,
-  .page-id-20 input[type="month"]:focus,
-  .page-id-20 input[type="time"]:hover,
-  .page-id-20 input[type="time"]:focus,
-  .page-id-20 input[type="week"]:hover,
-  .page-id-20 input[type="week"]:focus,
-  .page-id-20 input[type="number"]:hover,
-  .page-id-20 input[type="number"]:focus,
-  .page-id-20 input[type="email"]:hover,
-  .page-id-20 input[type="email"]:focus,
-  .page-id-20 input[type="url"]:hover,
-  .page-id-20 input[type="url"]:focus,
-  .page-id-20 input[type="search"]:hover,
-  .page-id-20 input[type="search"]:focus,
-  .page-id-20 input[type="tel"]:hover,
-  .page-id-20 input[type="tel"]:focus,
-  .page-id-20 input[type="color"]:hover,
-  .page-id-20 input[type="color"]:focus,
-  .page-id-20 select:hover,
-  .page-id-20 select:focus,
-  .page-id-20 textarea:hover,
-  .page-id-20 textarea:focus,
-  .page-id-20 .field:hover,
-  .page-id-20 .field:focus {
-    border: 3px solid #d5edf8; }
+.page-id-9 .grid-container {
+  margin: 0 auto;
+  max-width: 75%;
+  padding: 0 1rem; }
+  @media all and (min-width: 600px) {
+    .page-id-9 .grid-container .grid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .page-id-9 .grid-container .grid .cell {
+        width: calc(50% - 2rem);
+        padding: 0 1rem; } }
+  .page-id-9 .grid-container .grid .cell {
+    margin: 1rem 0; }
+    .page-id-9 .grid-container .grid .cell img {
+      display: block; }
+    .page-id-9 .grid-container .grid .cell .responsive-image {
+      max-width: 100%; }
+
+.page-id-20 {
+  background: no-repeat url(http://localhost:8888/yourfolio/wp-content/uploads/2018/02/nyc-background.jpeg);
+  padding: 0; }
+  .page-id-20 section {
+    text-align: left; }
+    .page-id-20 section .field:hover {
+      border-color: red; }
+  .page-id-20 input[type="submit"] {
+    background-color: #f01d4f;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 5px 25px; }
+  .page-id-20 input[type="text"],
+  .page-id-20 input[type="password"],
+  .page-id-20 input[type="datetime"],
+  .page-id-20 input[type="datetime-local"],
+  .page-id-20 input[type="date"],
+  .page-id-20 input[type="month"],
+  .page-id-20 input[type="time"],
+  .page-id-20 input[type="week"],
+  .page-id-20 input[type="number"],
+  .page-id-20 input[type="email"],
+  .page-id-20 input[type="url"],
+  .page-id-20 input[type="search"],
+  .page-id-20 input[type="tel"],
+  .page-id-20 input[type="color"],
+  .page-id-20 select,
+  .page-id-20 textarea,
+  .page-id-20 .field {
+    border: 1px solid lightgray; }
+    .page-id-20 input[type="text"]:hover, .page-id-20 input[type="text"]:focus,
+    .page-id-20 input[type="password"]:hover,
+    .page-id-20 input[type="password"]:focus,
+    .page-id-20 input[type="datetime"]:hover,
+    .page-id-20 input[type="datetime"]:focus,
+    .page-id-20 input[type="datetime-local"]:hover,
+    .page-id-20 input[type="datetime-local"]:focus,
+    .page-id-20 input[type="date"]:hover,
+    .page-id-20 input[type="date"]:focus,
+    .page-id-20 input[type="month"]:hover,
+    .page-id-20 input[type="month"]:focus,
+    .page-id-20 input[type="time"]:hover,
+    .page-id-20 input[type="time"]:focus,
+    .page-id-20 input[type="week"]:hover,
+    .page-id-20 input[type="week"]:focus,
+    .page-id-20 input[type="number"]:hover,
+    .page-id-20 input[type="number"]:focus,
+    .page-id-20 input[type="email"]:hover,
+    .page-id-20 input[type="email"]:focus,
+    .page-id-20 input[type="url"]:hover,
+    .page-id-20 input[type="url"]:focus,
+    .page-id-20 input[type="search"]:hover,
+    .page-id-20 input[type="search"]:focus,
+    .page-id-20 input[type="tel"]:hover,
+    .page-id-20 input[type="tel"]:focus,
+    .page-id-20 input[type="color"]:hover,
+    .page-id-20 input[type="color"]:focus,
+    .page-id-20 select:hover,
+    .page-id-20 select:focus,
+    .page-id-20 textarea:hover,
+    .page-id-20 textarea:focus,
+    .page-id-20 .field:hover,
+    .page-id-20 .field:focus {
+      border: 3px solid #d5edf8; }
 
 /*********************
 POSTS & CONTENT STYLES
@@ -1883,8 +1912,7 @@ POSTS & CONTENT STYLES
     border-bottom: 1px solid #9fa6b4;
     padding: 1.5em; }
   .hentry footer {
-    padding: 1.5em;
-    border-top: 1px solid #f8f9fa; }
+    padding: 1.5em; }
     .hentry footer p {
       margin: 0; }
 
@@ -2482,7 +2510,7 @@ you can add resource intensive styles.
   ._3dface {
     line-height: 400px; }
     ._3dface span {
-      font-size: 40px;
+      font-size: 38px;
       top: 150px; }
 
   ._3dface--front {
@@ -2694,7 +2722,10 @@ you can add resource intensive styles.
   Pages
   *********************/
   .about-pic img {
-    width: 35%; } }
+    width: 35%; }
+
+  .page-id-9 .grid-container .grid .cell {
+    width: calc(33.3333% - 2rem); } }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.

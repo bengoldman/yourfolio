@@ -392,7 +392,7 @@ mobile. Make sure to double check these!
 ._3dface {
   line-height: 400px; }
   ._3dface span {
-    font-size: 40px;
+    font-size: 38px;
     top: 150px; }
 
 ._3dface--front {
@@ -593,6 +593,9 @@ Pages
 *********************/
 .about-pic img {
   width: 35%; }
+
+.page-id-9 .grid-container .grid .cell {
+  width: calc(33.3333% - 2rem); }
 
 /*
 you can call the larger styles if you want, but there's really no need

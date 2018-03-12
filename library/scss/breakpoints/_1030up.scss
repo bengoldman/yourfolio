@@ -218,3 +218,17 @@ Pages
 .about-pic img {
 	width: 35%;
 }
+
+// Gallery Page
+
+.page-id-9 .grid-container {
+
+	.grid {
+
+		.cell {
+
+			width: calc(33.3333% - 2rem);
+
+		}
+	}
+}
