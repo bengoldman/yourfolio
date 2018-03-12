@@ -605,7 +605,7 @@ Pages
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	font-size: 20px;
+	font-size: 1.250em;
 	margin:  0;
 }
 
@@ -679,21 +679,23 @@ Pages
 				padding: 0 1rem;
 			}
 			 }
-			 
+
 		.cell {
-			
+
 			margin: 1rem 0;
 
 				img {
 
 					display: block;
+					border: dotted 0.500em $banana;
+					padding: 0.313em;
 				}
 
 				.responsive-image {
 					max-width: 100%;
 				}
 			}
-		
+
 		}
 
 }
@@ -710,7 +712,7 @@ Pages
 		text-align: left;
 
 		.field  {
-			
+
 			&:hover {
 				border-color: red;
 			}
@@ -754,6 +756,29 @@ Pages
 	}
 }
 
+// Resume Page
+
+.page-id-58 section {
+	
+	margin-top: 3rem;
+	box-shadow: 5px 8px 15px -2px;
+
+	.resume {
+
+		font-size: 30px;
+		padding: 2rem;
+
+		a:link {
+			color: $bones-pink;
+
+			&:hover {
+				color: $link-hover;
+			}
+		}
+	}
+}
+
+
 
 /*********************
 POSTS & CONTENT STYLES
@@ -761,7 +786,7 @@ POSTS & CONTENT STYLES
 
 #content {
 
-	margin-bottom: 3rem;
+	margin-bottom: 1rem;
 }
 		.big-title {
 			text-align: center;

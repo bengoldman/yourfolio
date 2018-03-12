@@ -1748,7 +1748,7 @@ Pages
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-size: 20px;
+  font-size: 1.250em;
   margin: 0; }
 
 .fa-wrapper {
@@ -1815,7 +1815,9 @@ Pages
   .page-id-9 .grid-container .grid .cell {
     margin: 1rem 0; }
     .page-id-9 .grid-container .grid .cell img {
-      display: block; }
+      display: block;
+      border: dotted 0.5em #F2C777;
+      padding: 0.313em; }
     .page-id-9 .grid-container .grid .cell .responsive-image {
       max-width: 100%; }
 
@@ -1885,11 +1887,23 @@ Pages
     .page-id-20 .field:focus {
       border: 3px solid #d5edf8; }
 
+.page-id-58 section {
+  margin-top: 3rem;
+  -webkit-box-shadow: 5px 8px 15px -2px;
+          box-shadow: 5px 8px 15px -2px; }
+  .page-id-58 section .resume {
+    font-size: 30px;
+    padding: 2rem; }
+    .page-id-58 section .resume a:link {
+      color: #f01d4f; }
+      .page-id-58 section .resume a:link:hover {
+        color: #d10e3c; }
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/
 #content {
-  margin-bottom: 3rem; }
+  margin-bottom: 1rem; }
 
 .big-title {
   text-align: center;
