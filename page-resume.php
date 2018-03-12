@@ -56,6 +56,9 @@
 											'link_after'  => '</span>',
 										) );
 									?>
+
+									<p class="resume">Click to download a copy of my <a href="#">headshot</a> or <a href="#">resume</a>.</p>
+
 								</section>
 
 
