@@ -1316,7 +1316,7 @@ a, a:visited {
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #036a81; }
+    color: #d10e3c; }
   a:link, a:visited:link {
     /*
     this highlights links on iPhones/iPads.

@@ -56,7 +56,7 @@
 								</div>
 End gallery -->
 
-								<div class="grid-container"><!-- Gallery pulling from Wordpress Media Gallery -->
+								<div class="grid-container"><!-- Gallery pulling from Wordpress Media Gallery.  IMPORTANT!!! Without the 'Gallery' category chosen, the images will not load. -->
 									<div class="grid">
 										<?php 
 											$args = array(
@@ -66,7 +66,7 @@ End gallery -->
 												'order' => 'asc',
 												'posts_per_page' => '30',
 												'post_status'    => 'inherit',
-												'category_name' => 'Gallery'
+												'category_name' => 'Gallery' //Wordpress media library catergory
 											);
 											$loop = new WP_Query( $args ); while ( $loop->have_posts() ) : $loop->the_post(); //queries for data and then runs it
 											$image = wp_get_attachment_image_src( get_the_ID(), 'full' ); // Full sized image & id formatted as url.
