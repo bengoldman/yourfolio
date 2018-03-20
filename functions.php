@@ -9,7 +9,7 @@ sidebars, comments, etc.
 */
 
 
-// Add Categories for Attachments
+// Add Categories for Attachments via 'Media Library Categories' plugin.
 function add_categories_for_attachments() {
   register_taxonomy_for_object_type( 'category', 'attachment' );
 }
