@@ -426,8 +426,7 @@ Homepage
     position: absolute;
     border: 1px solid #888;
     background: #FFF;
-    box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.1),
- 0 0 50px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 2px lightgray;
 	color: #333;
 	line-height: $cubeWidth-mobile;
 	
@@ -521,37 +520,37 @@ Homepage
   transform: rotateY(180deg); 
 }
 
-  // Apply backgrounds
+  /* Apply backgrounds
 ._3dface--front {
-  background: url(http://localhost:8888/yourfolio/wp-content/uploads/2018/03/marissa1024x1024.jpeg);
+  background: url('../images/marissa/marissa1024x1024.jpeg');
   background-size: 100%;
 }
 
 ._3dface--top {
-  background: url(http://localhost:8888/yourfolio/wp-content/uploads/2018/03/marissa729x438.jpeg);
+  background: url('../images/marissa/marissa729x438.jpeg');
   background-size: auto 100%;
 }
 
 ._3dface--bottom {
-    background: url(http://localhost:8888/yourfolio/wp-content/uploads/2018/03/marissa.jpeg);
+    background: url('../images/marissa/marissa.jpeg');
     background-size: auto 100%;
 }
 
 ._3dface--left {
-  background: url(http://localhost:8888/yourfolio/wp-content/uploads/2018/03/marissa729x438.jpeg);
+  background: url('../images/marissa/marissa729x438.jpeg');
   background-size: auto 100%;
 }
 
 ._3dface--right {
-  background: url(http://localhost:8888/yourfolio/wp-content/uploads/2018/03/marissa1024x1024.jpeg);
+  background: url('../images/marissa/marissa1024x1024.jpeg');
   background-size: auto 100%;
 }
 
 ._3dface--back {
-  background: url(http://localhost:8888/yourfolio/wp-content/uploads/2018/03/marissa.jpeg);
+  background: url('../images/marissa/marissa.jpeg');
   background-size: auto 100%;
 }
-
+*/
 
 /********************
 Blog
@@ -724,7 +723,8 @@ Pages
 		background-color: $link-color;
 		color: $white;
 		font-size: 25px;
-		border-radius: 20px;
+		font-weight: bold;
+		border-radius: 8px;
 		padding: 5px 25px;
 	}
 	

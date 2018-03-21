@@ -33,38 +33,62 @@
 
 							<div class="space3d">
 								<div class="_3dbox">
-									<div class="_3dface _3dface--front">
-										<a href="http://localhost:8888/yourfolio/">
+									<div class="_3dface _3dface--front"<?php
+										if ( get_field('cube_image_front') ) {
+											echo 'style="background-image: url(' . get_field('cube_image_front') . '); background-size: 100%;"';
+										}
+									?>><!-- End first image div -->
+										<a href="/">
 											<span>HOME</span>
 										</a>
 									</div>
 
-									<div class="_3dface _3dface--top">
-										<a href="http://localhost:8888/yourfolio/resume/">
+									<div class="_3dface _3dface--top"<?php
+										if ( get_field('cube_image_top') ) {
+											echo 'style="background-image: url(' . get_field('cube_image_top') . '); background-size: auto 100%;"';
+										}
+									?>><!-- End second image div -->
+										<a href="/yourfolio/resume/">
 											<span>HEADSHOT/RESUME</span>
 										</a>
 									</div>
 
-									<div class="_3dface _3dface--bottom">
-										<a href="http://localhost:8888/yourfolio/testimonials/">
+									<div class="_3dface _3dface--bottom"<?php
+										if ( get_field('cube_image_bottom') ) {
+											echo 'style="background-image: url(' . get_field('cube_image_bottom') . '); background-size: auto 100%;"';
+										}
+									?>><!-- End third image div -->
+										<a href="/yourfolio/testimonials/">
 											<span>MY FANS</span>
 										</a>
 									</div>
 
-									<div class="_3dface _3dface--left">
-										<a href="http://localhost:8888/yourfolio/media">
+									<div class="_3dface _3dface--left"<?php
+										if ( get_field('cube_image_left') ) {
+											echo 'style="background-image: url(' . get_field('cube_image_left') . '); background-size: auto 100%;"';
+										}
+									?>><!-- End fourth image div -->
+										<a href="/yourfolio/media">
 											<span>MEDIA</span>
 										</a>
 									</div>
 
-									<div class="_3dface _3dface--right">
-										<a href="http://localhost:8888/yourfolio/about/">
+									<div class="_3dface _3dface--right"<?php
+										if ( get_field('cube_image_right') ) {
+											echo 'style="background-image: url(' . get_field('cube_image_right') . '); background-size: auto 100%;"';
+										}
+									?>><!-- End fifth image div -->
+										<a href="/yourfolio/about/">
 											<span>ABOUT ME</span>
 										</a>
 									</div>
 
-									<div class="_3dface _3dface--back">
-										<a href="http://localhost:8888/yourfolio/contact/">
+									<div class="_3dface _3dface--back"<?php
+										if ( get_field('cube_image_back') ) {
+											echo 'style="background-image: url(' . get_field('cube_image_back') . '); background-size: auto 100%;"';
+										}
+									?>><!-- End sixth image div -->
+										<a href="/yourfolio/contact/">
 											<span>CONTACT</span>
 										</a>
 									</div>
