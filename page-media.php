@@ -73,8 +73,10 @@ End gallery -->
 											$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail' ); // Thumbnail size 
 										?>
 
-												<div class="cell"><a href="<?php echo $image[0]; ?>"><img src="<?php echo $thumb[0]; ?>" class="responsive-image"></a></div>
-													<!-- fetches thumbnail array, and loads withing link to full size libary image. -->
+												<div class="cell" id="myGallery">
+													<a href="<?php echo $image[0]; ?>" rel="lightbox"><img src="<?php echo $thumb[0]; ?>" class="responsive-image"></a>
+												</div><!-- fetches thumbnail array, and loads within link to full size libary image. -->
+
 
 											<?php endwhile; ?>
 									</div>
@@ -113,5 +115,13 @@ End gallery -->
 
 			</div>
 
-
+<!-- Lightbox js library Fluidbox -->
+<script type="text/javascript">
+jQuery.noConflict();
+(function ( $ ) {
+	$ (function () {
+		$('#myGallery a[rel="lightbox"]').fluidbox();
+	});
+})(jQuery);
+</script>
 <?php get_footer(); ?>
