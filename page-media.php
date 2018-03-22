@@ -118,10 +118,10 @@ End gallery -->
 <!-- Lightbox js library Fluidbox -->
 <script type="text/javascript">
 jQuery.noConflict();
-(function ( $ ) {
-	$ (function () {
-		$('#myGallery a[rel="lightbox"]').fluidbox();
-	});
-})(jQuery);
+	(function ( $ ) {
+		$(function () {
+			$('#myGallery a[rel="lightbox"]').fluidbox();
+		});
+	})(jQuery);
 </script>
 <?php get_footer(); ?>
