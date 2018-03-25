@@ -312,6 +312,9 @@ Pages
 .about-pic img {
   width: 55%; }
 
+.flex-videoWrapper {
+  flex-flow: row; }
+
 /*********************
 Posts
 *********************/
