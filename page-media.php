@@ -32,55 +32,23 @@
 
 								</header>
 
-<!-- gallery not using wordpress media gallery 
-								<div class="container">
-									<div class="grid">
-
-										<div class="cell">
-											<img src="http://placehold.it/800x800" class="responsive-image">
-										</div>
-
-										<div class="cell">
-											<img src="http://placehold.it/800x800" class="responsive-image">
-										</div>
-
-										<div class="cell">
-											<img src="http://placehold.it/800x800" class="responsive-image">
-										</div>
-
-										<div class="cell">
-											<img src="http://placehold.it/800x800" class="responsive-image">
-										</div>
-
-									</div>
+								<div class="flex-videoWrapper" style="display:flex;"><!-- Media-->
+								<div class="flex-item">
+									<?php if( get_field('video') ): ?>
+										<?php the_field('video'); ?>
+									<?php endif; ?>
 								</div>
-End gallery -->
-
-								<div class="grid-container"><!-- Gallery pulling from Wordpress Media Gallery.  IMPORTANT!!! Without the 'Gallery' category chosen, the images will not load. -->
-									<div class="grid">
-										<?php 
-											$args = array(
-												'post_type' => 'attachment',
-												'post_mime_type' => 'image',
-												'orderby' => 'post_date',
-												'order' => 'asc',
-												'posts_per_page' => '30',
-												'post_status'    => 'inherit',
-												'category_name' => 'Gallery' //Wordpress media library catergory
-											);
-											$loop = new WP_Query( $args ); while ( $loop->have_posts() ) : $loop->the_post(); //queries for data and then runs it
-											$image = wp_get_attachment_image_src( get_the_ID(), 'full' ); // Full sized image & id formatted as url.
-											$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail' ); // Thumbnail size 
-										?>
-
-												<div class="cell" id="myGallery">
-													<a href="<?php echo $image[0]; ?>" rel="lightbox"><img src="<?php echo $thumb[0]; ?>" class="responsive-image"></a>
-												</div><!-- fetches thumbnail array, and loads within link to full size libary image. -->
-
-
-											<?php endwhile; ?>
-									</div>
-								</div><!-- End Media Library Gallery -->
+								<div class="flex-item">
+									<?php if( get_field('video2') ): ?>
+										<?php the_field('video2'); ?>
+									<?php endif; ?>
+								</div>
+								<div class="flex-item">
+									<?php if( get_field('video3') ): ?>
+										<?php the_field('video3'); ?>
+									<?php endif; ?>
+								</div>
+								</div><!-- End Media -->
 
 
 								<footer class="article-footer">
@@ -117,11 +85,8 @@ End gallery -->
 
 <!-- Lightbox js library Fluidbox -->
 <script type="text/javascript">
-jQuery.noConflict();
-	(function ( $ ) {
-		$(function () {
-			$('#myGallery a[rel="lightbox"]').fluidbox();
-		});
-	})(jQuery);
+(function($) {
+  
+});
 </script>
 <?php get_footer(); ?>

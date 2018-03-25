@@ -265,4 +265,8 @@ function bones_fonts() {
 add_action('wp_enqueue_scripts', 'bones_fonts');
 
 
+// Jquery script enabled
+wp_enqueue_script("jquery");
+
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
