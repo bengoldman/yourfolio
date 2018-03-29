@@ -2537,6 +2537,65 @@ you can add resource intensive styles.
   /*********************
   GENERAL STYLES
   *********************/
+  .your-name,
+  .your-email {
+    float: left;
+    width: 50%; }
+    .your-name input[type="text"],
+    .your-name input[type="password"],
+    .your-name input[type="datetime"],
+    .your-name input[type="datetime-local"],
+    .your-name input[type="date"],
+    .your-name input[type="month"],
+    .your-name input[type="time"],
+    .your-name input[type="week"],
+    .your-name input[type="number"],
+    .your-name input[type="email"],
+    .your-name input[type="url"],
+    .your-name input[type="search"],
+    .your-name input[type="tel"],
+    .your-name input[type="color"],
+    .your-name select,
+    .your-name textarea,
+    .your-name .field,
+    .your-email input[type="text"],
+    .your-email input[type="password"],
+    .your-email input[type="datetime"],
+    .your-email input[type="datetime-local"],
+    .your-email input[type="date"],
+    .your-email input[type="month"],
+    .your-email input[type="time"],
+    .your-email input[type="week"],
+    .your-email input[type="number"],
+    .your-email input[type="email"],
+    .your-email input[type="url"],
+    .your-email input[type="search"],
+    .your-email input[type="tel"],
+    .your-email input[type="color"],
+    .your-email select,
+    .your-email textarea,
+    .your-email .field {
+      width: 90%; }
+
+  .your-subject input[type="text"],
+  .your-subject input[type="password"],
+  .your-subject input[type="datetime"],
+  .your-subject input[type="datetime-local"],
+  .your-subject input[type="date"],
+  .your-subject input[type="month"],
+  .your-subject input[type="time"],
+  .your-subject input[type="week"],
+  .your-subject input[type="number"],
+  .your-subject input[type="email"],
+  .your-subject input[type="url"],
+  .your-subject input[type="search"],
+  .your-subject input[type="tel"],
+  .your-subject input[type="color"],
+  .your-subject select, .your-subject t
+  extarea,
+  .your-subject .field {
+    width: 45%; }
+
   /*********************
   LAYOUT & GRID STYLES
   *********************/
