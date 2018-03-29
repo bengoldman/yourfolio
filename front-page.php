@@ -58,8 +58,8 @@
 											echo 'style="background-image: url(' . get_field('cube_image_bottom') . '); background-size: auto 100%;"';
 										}
 									?>><!-- End third image div -->
-										<a href="/yourfolio/testimonials/">
-											<span>MY FANS</span>
+										<a href="/yourfolio/media/">
+											<span>MEDIA</span>
 										</a>
 									</div>
 
@@ -68,8 +68,8 @@
 											echo 'style="background-image: url(' . get_field('cube_image_left') . '); background-size: auto 100%;"';
 										}
 									?>><!-- End fourth image div -->
-										<a href="/yourfolio/media">
-											<span>MEDIA</span>
+										<a href="/yourfolio/gallery/">
+											<span>GALLERY</span>
 										</a>
 									</div>
 
