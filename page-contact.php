@@ -76,7 +76,7 @@
 
 						</main>
 
-						<?php //get_sidebar( 'sidebar2' ); ?>
+						<?php get_sidebar( 'sidebar2' ); ?>
 
 				</div>
 
