@@ -42,10 +42,10 @@ textarea,
   height: 40px;
   line-height: 1em;
   padding: 0 12px;
-  margin-bottom: 14px;
+  margin-top: 10px;
   font-size: 1em;
-  color: $text-color;
-  border-radius: 3px;
+  color: #111;
+  border-radius: 30px;
   vertical-align: middle;
   box-shadow: none;
   border: 0;
@@ -130,7 +130,39 @@ select {
 
 .page-id-20 {
 
-	background: no-repeat url(http://localhost:8888/yourfolio/wp-content/uploads/2018/02/newyorkbackground.jpeg);
+//Adjustments for demo purposes
+
+  #logo a {
+    color: #fff;
+  }
+
+  .hentry {
+    border-radius: 25px;
+  }
+  .d-5of7 {
+    width: 60%;
+  }
+
+  .nav li a {
+    color: white;
+  }
+  .inner-content {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+  }
+
+  .page-title {
+
+      color: $black;
+      text-align: left;
+
+  }
+
+  //end temporary styles
+
+	background: no-repeat url(http://localhost:8888/yourfolio/wp-content/uploads/2018/02/green.jpg);
 	padding: 0;
 
 	section {
@@ -147,11 +179,11 @@ select {
 
 	input[type="submit"] {
 
-		background-color: $link-color;
+		background-color: $black;
 		color: $white;
 		font-size: 25px;
 		font-weight: bold;
-		border-radius: 8px;
+		border-radius: 30px;
 		padding: 5px 25px;
 	}
 	

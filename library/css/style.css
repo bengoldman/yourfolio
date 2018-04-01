@@ -1096,10 +1096,10 @@ textarea,
   height: 40px;
   line-height: 1em;
   padding: 0 12px;
-  margin-bottom: 14px;
+  margin-top: 10px;
   font-size: 1em;
-  color: #5c6b80;
-  border-radius: 3px;
+  color: #111;
+  border-radius: 30px;
   vertical-align: middle;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1346,18 +1346,34 @@ select {
   background-position: 97.5% center; }
 
 .page-id-20 {
-  background: no-repeat url(http://localhost:8888/yourfolio/wp-content/uploads/2018/02/newyorkbackground.jpeg);
+  background: no-repeat url(http://localhost:8888/yourfolio/wp-content/uploads/2018/02/green.jpg);
   padding: 0; }
+  .page-id-20 #logo a {
+    color: #fff; }
+  .page-id-20 .hentry {
+    border-radius: 25px; }
+  .page-id-20 .d-5of7 {
+    width: 60%; }
+  .page-id-20 .nav li a {
+    color: white; }
+  .page-id-20 .inner-content {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%; }
+  .page-id-20 .page-title {
+    color: #323944;
+    text-align: left; }
   .page-id-20 section {
     text-align: left; }
     .page-id-20 section .field:hover {
       border-color: red; }
   .page-id-20 input[type="submit"] {
-    background-color: #f01d4f;
+    background-color: #323944;
     color: #fff;
     font-size: 25px;
     font-weight: bold;
-    border-radius: 8px;
+    border-radius: 30px;
     padding: 5px 25px; }
   .page-id-20 input[type="text"],
   .page-id-20 input[type="password"],
