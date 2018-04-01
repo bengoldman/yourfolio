@@ -159,6 +159,15 @@ select {
     }
   }
 
+  .box-shadow-menu:before {
+		background: $white;
+    box-shadow:  0 0.25em 0 0 $white, 0 0.5em 0 0 $white;
+  }
+
+  .menu-toggle {
+    color: $white;
+  }
+
   .nav li a {
     color: white;
   }

@@ -1364,6 +1364,12 @@ select {
     @media screen and (max-width: 768px) {
       .page-id-20 .widgettitle {
         display: none; } }
+  .page-id-20 .box-shadow-menu:before {
+    background: #fff;
+    -webkit-box-shadow: 0 0.25em 0 0 #fff, 0 0.5em 0 0 #fff;
+            box-shadow: 0 0.25em 0 0 #fff, 0 0.5em 0 0 #fff; }
+  .page-id-20 .menu-toggle {
+    color: #fff; }
   .page-id-20 .nav li a {
     color: white; }
   .page-id-20 .inner-content {
