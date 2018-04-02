@@ -92,7 +92,7 @@ a, a:visited {
 
 	/* on hover */
 	&:hover, &:focus {
-		color: $link-hover;
+		color: $alert-blue;
 	}
 
 	/* on click */
@@ -450,7 +450,7 @@ Homepage
     font-size: 24px;
     position: absolute;
 	top: 80px;
-	left: 10px;
+	left: 15%;
 	&:hover {
 		text-decoration: underline;
 	}
@@ -606,6 +606,7 @@ Pages
 	justify-content: space-around;
 	font-size: 1.250em;
 	margin:  0;
+	flex-direction: column;
 }
 
 //Font Awesome Links

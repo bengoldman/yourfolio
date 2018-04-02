@@ -1346,7 +1346,7 @@ select {
   background-position: 97.5% center; }
 
 .page-id-20 {
-  background: no-repeat url(http://localhost:8888/yourfolio/wp-content/uploads/2018/02/green.jpg);
+  background: no-repeat url(http://yourfolio.totallymystuff.com/wp-content/uploads/2018/02/green.jpg);
   padding: 0; }
   .page-id-20 #logo a {
     color: #fff; }
@@ -1532,7 +1532,7 @@ a, a:visited {
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #d10e3c; }
+    color: #d5edf8; }
   a:link, a:visited:link {
     /*
     this highlights links on iPhones/iPads.
@@ -1833,7 +1833,7 @@ Homepage
     font-size: 24px;
     position: absolute;
     top: 80px;
-    left: 10px; }
+    left: 15%; }
     ._3dface span:hover {
       text-decoration: underline; }
 
@@ -1972,7 +1972,11 @@ Pages
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-size: 1.250em;
-  margin: 0; }
+  margin: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .fa-wrapper {
   width: 200px;
@@ -2657,7 +2661,11 @@ you can add resource intensive styles.
     font-size: 25px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
     .skillz li, .skillz li:nth-child(2) {
       padding-right: 2.500rem; }
     .skillz li:nth-child(3) {

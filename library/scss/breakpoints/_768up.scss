@@ -108,6 +108,7 @@ HEADER STYLES
 .skillz {
 	font-size: 25px;
 	justify-content: center;
+	flex-direction: row;
 
 	li, li:nth-child(2) {
 		padding-right: 2.500rem; 
