@@ -45,11 +45,11 @@ textarea,
   margin-top: 10px;
   font-size: 1em;
   color: #111;
-  border-radius: 30px;
+  //border-radius: 30px;
   vertical-align: middle;
   box-shadow: none;
   border: 0;
-  width: 80%;
+  width: 100%;
   max-width: 400px;
   font-family: $lato;
   background-color: $gray;
@@ -109,7 +109,7 @@ input[type="password"] {
 
 // textareas
 textarea {
-  max-width: 100%;
+  //max-width: 100%;
   min-height: 120px;
   line-height: 1.5em;
 }
@@ -136,17 +136,21 @@ select {
     color: #fff;
   }
 
-  .hentry {
+  /*.hentry {
     border-radius: 25px;
-  }
-  .d-5of7 {
-    width: 100%;
+  }*/
 
-    @media screen and (min-width: 768px) {
-      width: 60%;
-    }
+.your-name,
+.your-email,
+.your-message {
+  text-align: left;
+  width: 100%;
+}
 
-  }
+
+#sidebar2 {
+  width: 40%;
+
 
   .widgettitle {
     border-bottom: none;
@@ -158,6 +162,7 @@ select {
       display: none;
     }
   }
+}
 
   .box-shadow-menu:before {
 		background: $white;
@@ -181,18 +186,16 @@ select {
   .page-title {
 
       color: $black;
-      text-align: left;
+      
 
   }
 
   //end temporary styles
 
-	background: no-repeat url(http://yourfolio.totallymystuff.com/wp-content/uploads/2018/02/green.jpg);
+	background: no-repeat url(http://localhost:8888/yourfolio/wp-content/uploads/2018/02/starburst.jpg);
 	padding: 0;
 
 	section {
-
-		text-align: left;
 
 		.field  {
 
@@ -204,12 +207,13 @@ select {
 
 	input[type="submit"] {
 
-		background-color: $black;
+    width: 100%;
+    padding: 5px 25px;
+    border-radius: 5px;
+    background-color: $link-color;
 		color: $white;
 		font-size: 25px;
 		font-weight: bold;
-		border-radius: 30px;
-		padding: 5px 25px;
 	}
 	
 	input[type="text"],
@@ -234,7 +238,7 @@ select {
 
 		&:hover,
 		&:focus {
-			border: 3px solid $alert-blue;
+			border: 3px solid $link-lighten;
 		}
 
 	}

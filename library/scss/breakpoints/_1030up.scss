@@ -9,9 +9,9 @@ be seen on the Desktop.
 
 ******************************************************************/
 
-.wrap {
+/*.wrap {
   width: 1040px;
-}
+}*/
 
 
 /*********************
@@ -146,6 +146,14 @@ NAVIGATION STYLES
 		.main-navigation li a:focus {
 				color: $link-hover;
 		}
+
+		.page-id-20 {
+			.main-navigation li a:hover,
+			.main-navigation li a:focus {
+				color: $white;
+				text-decoration: underline;
+			}
+		}
 		.main-navigation li {
 				margin-right: 15px;
 				position: relative;
@@ -221,14 +229,21 @@ Pages
 
 // Gallery Page
 
-.page-id-9 .grid-container {
+.page-id-9 {
 
-	.grid {
+	.wrap {
+		width: 1040px;
 
-		.cell {
+		.grid-container {
 
-			width: calc(33.3333% - 2rem);
+				.grid {
 
+					.cell {
+
+						width: calc(33.3333% - 2rem);
+
+					}
+				}
 		}
 	}
 }

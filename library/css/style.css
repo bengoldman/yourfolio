@@ -1099,12 +1099,11 @@ textarea,
   margin-top: 10px;
   font-size: 1em;
   color: #111;
-  border-radius: 30px;
   vertical-align: middle;
   -webkit-box-shadow: none;
           box-shadow: none;
   border: 0;
-  width: 80%;
+  width: 100%;
   max-width: 400px;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #eaedf2;
@@ -1332,7 +1331,6 @@ input[type="password"] {
   letter-spacing: 0.3em; }
 
 textarea {
-  max-width: 100%;
   min-height: 120px;
   line-height: 1.5em; }
 
@@ -1346,24 +1344,27 @@ select {
   background-position: 97.5% center; }
 
 .page-id-20 {
-  background: no-repeat url(http://yourfolio.totallymystuff.com/wp-content/uploads/2018/02/green.jpg);
+  /*.hentry {
+    border-radius: 25px;
+  }*/
+  background: no-repeat url(http://localhost:8888/yourfolio/wp-content/uploads/2018/02/starburst.jpg);
   padding: 0; }
   .page-id-20 #logo a {
     color: #fff; }
-  .page-id-20 .hentry {
-    border-radius: 25px; }
-  .page-id-20 .d-5of7 {
+  .page-id-20 .your-name,
+  .page-id-20 .your-email,
+  .page-id-20 .your-message {
+    text-align: left;
     width: 100%; }
-    @media screen and (min-width: 768px) {
-      .page-id-20 .d-5of7 {
-        width: 60%; } }
-  .page-id-20 .widgettitle {
-    border-bottom: none;
-    color: white;
-    font-size: 42px; }
-    @media screen and (max-width: 768px) {
-      .page-id-20 .widgettitle {
-        display: none; } }
+  .page-id-20 #sidebar2 {
+    width: 40%; }
+    .page-id-20 #sidebar2 .widgettitle {
+      border-bottom: none;
+      color: white;
+      font-size: 42px; }
+      @media screen and (max-width: 768px) {
+        .page-id-20 #sidebar2 .widgettitle {
+          display: none; } }
   .page-id-20 .box-shadow-menu:before {
     background: #fff;
     -webkit-box-shadow: 0 0.25em 0 0 #fff, 0 0.5em 0 0 #fff;
@@ -1377,19 +1378,17 @@ select {
     margin-right: auto;
     display: block; }
   .page-id-20 .page-title {
-    color: #323944;
-    text-align: left; }
-  .page-id-20 section {
-    text-align: left; }
-    .page-id-20 section .field:hover {
-      border-color: red; }
+    color: #323944; }
+  .page-id-20 section .field:hover {
+    border-color: red; }
   .page-id-20 input[type="submit"] {
-    background-color: #323944;
+    width: 100%;
+    padding: 5px 25px;
+    border-radius: 5px;
+    background-color: #ff0000;
     color: #fff;
     font-size: 25px;
-    font-weight: bold;
-    border-radius: 30px;
-    padding: 5px 25px; }
+    font-weight: bold; }
   .page-id-20 input[type="text"],
   .page-id-20 input[type="password"],
   .page-id-20 input[type="datetime"],
@@ -1441,7 +1440,7 @@ select {
     .page-id-20 textarea:focus,
     .page-id-20 .field:hover,
     .page-id-20 .field:focus {
-      border: 3px solid #d5edf8; }
+      border: 3px solid #ffcccc; }
 
 /*********************
 BASE (MOBILE) SIZE
@@ -1558,7 +1557,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 h1, .h1 {
   font-size: 2.5em;
   line-height: 1.333em;
-  color: #f01d4f;
+  color: #ff0000;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
 
 h2, .h2 {
@@ -1832,7 +1831,7 @@ Homepage
   ._3dface span {
     font-size: 24px;
     position: absolute;
-    top: 80px;
+    top: 4.375rem;
     left: 15%; }
     ._3dface span:hover {
       text-decoration: underline; }
@@ -2070,7 +2069,7 @@ Pages
     .page-id-58 section .resume a:link {
       color: #f01d4f; }
       .page-id-58 section .resume a:link:hover {
-        color: #d10e3c; }
+        color: #d10000; }
 
 /*********************
 POSTS & CONTENT STYLES
@@ -2572,65 +2571,53 @@ you can add resource intensive styles.
   /*********************
   GENERAL STYLES
   *********************/
-  .your-name,
+  /*.your-name,
   .your-email {
-    float: left;
-    width: 50%; }
-    .your-name input[type="text"],
-    .your-name input[type="password"],
-    .your-name input[type="datetime"],
-    .your-name input[type="datetime-local"],
-    .your-name input[type="date"],
-    .your-name input[type="month"],
-    .your-name input[type="time"],
-    .your-name input[type="week"],
-    .your-name input[type="number"],
-    .your-name input[type="email"],
-    .your-name input[type="url"],
-    .your-name input[type="search"],
-    .your-name input[type="tel"],
-    .your-name input[type="color"],
-    .your-name select,
-    .your-name textarea,
-    .your-name .field,
-    .your-email input[type="text"],
-    .your-email input[type="password"],
-    .your-email input[type="datetime"],
-    .your-email input[type="datetime-local"],
-    .your-email input[type="date"],
-    .your-email input[type="month"],
-    .your-email input[type="time"],
-    .your-email input[type="week"],
-    .your-email input[type="number"],
-    .your-email input[type="email"],
-    .your-email input[type="url"],
-    .your-email input[type="search"],
-    .your-email input[type="tel"],
-    .your-email input[type="color"],
-    .your-email select,
-    .your-email textarea,
-    .your-email .field {
-      width: 90%; }
-
-  .your-subject input[type="text"],
-  .your-subject input[type="password"],
-  .your-subject input[type="datetime"],
-  .your-subject input[type="datetime-local"],
-  .your-subject input[type="date"],
-  .your-subject input[type="month"],
-  .your-subject input[type="time"],
-  .your-subject input[type="week"],
-  .your-subject input[type="number"],
-  .your-subject input[type="email"],
-  .your-subject input[type="url"],
-  .your-subject input[type="search"],
-  .your-subject input[type="tel"],
-  .your-subject input[type="color"],
-  .your-subject select, .your-subject t
-  extarea,
-  .your-subject .field {
-    width: 45%; }
-
+  	//float: left;
+  	//width: 50%;
+  	
+  		input[type="text"], 
+  		input[type="password"], 
+  		input[type="datetime"], 
+  		input[type="datetime-local"], 
+  		input[type="date"], 
+  		input[type="month"], 
+  		input[type="time"], 
+  		input[type="week"], 
+  		input[type="number"], 
+  		input[type="email"], 
+  		input[type="url"], 
+  		input[type="search"], 
+  		input[type="tel"], 
+  		input[type="color"], 
+  		select, 
+  		textarea, 
+  		.field {
+  			width: 90%;
+  		}
+  }
+  
+  .your-subject {
+  	input[type="text"], 
+  	input[type="password"], 
+  	input[type="datetime"], 
+  	input[type="datetime-local"], 
+  	input[type="date"], 
+  	input[type="month"], 
+  	input[type="time"], 
+  	input[type="week"], 
+  	input[type="number"], 
+  	input[type="email"], 
+  	input[type="url"], 
+  	input[type="search"], 
+  	input[type="tel"], 
+  	input[type="color"], 
+  	select, t
+  	extarea, 
+  	.field {
+  		width: 45%;
+  	}
+  }*/
   /*********************
   LAYOUT & GRID STYLES
   *********************/
@@ -2682,6 +2669,9 @@ you can add resource intensive styles.
     -webkit-box-direction: normal;
         -ms-flex-flow: row;
             flex-flow: row; }
+
+  .page-id-20 #main {
+    width: 60%; }
 
   /*********************
   Posts
@@ -2766,7 +2756,7 @@ you can add resource intensive styles.
   ._3dface {
     line-height: 400px; }
     ._3dface span {
-      font-size: 38px;
+      font-size: 30px;
       top: 150px; }
 
   ._3dface--front {
@@ -2823,9 +2813,9 @@ you can add resource intensive styles.
   be seen on the Desktop.
   
   ******************************************************************/
-  .wrap {
-    width: 1040px; }
-
+  /*.wrap {
+    width: 1040px;
+  }*/
   /*********************
   NAVIGATION STYLES
   *********************/
@@ -2914,7 +2904,12 @@ you can add resource intensive styles.
 
   .main-navigation li a:hover,
   .main-navigation li a:focus {
-    color: #d10e3c; }
+    color: #d10000; }
+
+  .page-id-20 .main-navigation li a:hover,
+  .page-id-20 .main-navigation li a:focus {
+    color: #fff;
+    text-decoration: underline; }
 
   .main-navigation li {
     margin-right: 15px;
@@ -2980,8 +2975,10 @@ you can add resource intensive styles.
   .about-pic img {
     width: 35%; }
 
-  .page-id-9 .grid-container .grid .cell {
-    width: calc(33.3333% - 2rem); } }
+  .page-id-9 .wrap {
+    width: 1040px; }
+    .page-id-9 .wrap .grid-container .grid .cell {
+      width: calc(33.3333% - 2rem); } }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
@@ -3053,3 +3050,6 @@ Feel free to customize this. Remember to add things that won't make
 sense to print at the bottom. Things like nav, ads, and forms should
 be set to display none.
 *********************/
+@media all and (min-width: 481px) and (max-width: 768px) {
+  .page-id-20 .wrap {
+    width: 70%; } }
