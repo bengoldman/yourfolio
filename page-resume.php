@@ -33,6 +33,20 @@
 								</header>
 
 								<section class="entry-content cf" itemprop="articleBody">
+								<div class="resume">
+									<ul>
+										<li>
+											<a href="<?php the_field('headshot'); ?>">
+												Headshot
+											</a>
+										</li>
+										<li>
+											<a href="<?php the_field('resume'); ?>">
+												Resume
+											</a>
+										</li>
+									</ul>
+								</div>
 									<?php
 										// the content (pretty self explanatory huh)
 										the_content();
@@ -57,10 +71,7 @@
 										) );
 									?>
 
-									<p class="resume">Click to download a copy of my <a href="#">headshot</a> or <a href="#">resume</a>.</p>
-
 								</section>
-
 
 								<footer class="article-footer">
 
@@ -90,7 +101,6 @@
 
 						</main>
 
-						<!-- <?php get_sidebar(); ?> -->
 
 				</div>
 
