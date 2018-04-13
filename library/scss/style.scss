@@ -147,3 +147,45 @@ be set to display none.
 
 	.page-id-20 .wrap {width: 70%;}
  }
+
+
+// Custom Pages
+.page-id-6,
+.page-id-58,
+.page-id-51,
+.page-id-9 {
+	article {
+		border: none;
+	}
+	.d-5of7 {
+		float: none;
+		padding-right: none;
+		width: 100%;
+	}
+}
+
+
+// Resume Page
+
+.page-id-58 {
+
+	.entry-content {
+	
+		margin-top: 3rem;
+		box-shadow: 5px 8px 15px -2px;
+
+		.resume {
+
+			font-size: 35px;
+			padding: 2rem;
+
+			a {
+				color: $link-color;
+
+				&:hover {
+					color: $link-hover;
+				}
+			}
+		}
+	}
+}

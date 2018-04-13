@@ -132,7 +132,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 h1, .h1 {
 	font-size: 2.5em;
 	line-height: 1.333em;
-	color: $link-color;
+	color: $black-lite;
 	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
@@ -179,7 +179,6 @@ HEADER STYLES
 		@media all and (min-width: 1240px) { 
 			height: 550px; }
 }
-//$black cover no repeat  style="background-image: url(http://localhost:8888/kayak/wp-content/uploads/2018/02/pexels-photo-461595.jpeg);"
 
 
 	#logo {
@@ -188,7 +187,7 @@ HEADER STYLES
 		text-align: center;
 		font-size: 2.2rem;
 		a {
-				color: $black;
+				color: $link-color;
 			}
 	}
 
@@ -288,10 +287,10 @@ NAVIGATION STYLES
 		padding: 5px;
 		text-decoration: none;
 
-		&:hover {
-			text-decoration: underline;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
-	}
 }
 
 /*
@@ -425,7 +424,8 @@ Homepage
     overflow: hidden;
     position: absolute;
     border: 1px solid #888;
-    background: #FFF;
+	background: #FFF no-repeat;
+	opacity: 0.8;
     box-shadow: 2px 2px 2px lightgray;
 	color: #333;
 	line-height: $cubeWidth-mobile;
@@ -439,6 +439,11 @@ Homepage
     width: 100%;
 	height:100%;
 	color: $white;
+	text-shadow:
+	-1px -1px 0 #000,
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000;
 
 	&:hover {
 		color: $alert-blue;
@@ -633,28 +638,12 @@ Pages
 	}
 }
 
+ //About Page
 
-//About Page
-
-.about-pic img {
+ .about-pic img {
 	width: 75%;
 	height: auto;
 	box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.48), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
-}
-
-// Custom Pages
-.page-id-6,
-.page-id-58,
-.page-id-51,
-.page-id-9 {
-	article {
-		border: none;
-	}
-	.d-5of7 {
-		float: none;
-		padding-right: none;
-		width: 100%;
-	}
 }
 
 //Media page
@@ -670,7 +659,6 @@ Pages
 		padding: 10px;
 	}
 }
-
 
 //Gallery page 
 
@@ -713,28 +701,6 @@ Pages
 
 		}
 
-}
-
-// Resume Page
-
-.page-id-58 section {
-	
-	margin-top: 3rem;
-	box-shadow: 5px 8px 15px -2px;
-
-	.resume {
-
-		font-size: 30px;
-		padding: 2rem;
-
-		a:link {
-			color: $bones-pink;
-
-			&:hover {
-				color: $link-hover;
-			}
-		}
-	}
 }
 
 

@@ -45,7 +45,7 @@
 
 									<div class="_3dface _3dface--top"<?php
 										if ( get_field('cube_image_top') ) {
-											echo 'style="background-image: url(' . get_field('cube_image_top') . '); background-size: auto 100%;"';
+											echo 'style="background-image: url(' . get_field('cube_image_top') . '); background-size: 100%;"';
 										}
 									?>><!-- End second image div -->
 										<a href="/yourfolio/resume/">
@@ -55,7 +55,7 @@
 
 									<div class="_3dface _3dface--bottom"<?php
 										if ( get_field('cube_image_bottom') ) {
-											echo 'style="background-image: url(' . get_field('cube_image_bottom') . '); background-size: auto 100%;"';
+											echo 'style="background-image: url(' . get_field('cube_image_bottom') . '); background-size: 100%;"';
 										}
 									?>><!-- End third image div -->
 										<a href="/yourfolio/media/">
@@ -65,7 +65,7 @@
 
 									<div class="_3dface _3dface--left"<?php
 										if ( get_field('cube_image_left') ) {
-											echo 'style="background-image: url(' . get_field('cube_image_left') . '); background-size: auto 100%;"';
+											echo 'style="background-image: url(' . get_field('cube_image_left') . '); background-size: 100%;"';
 										}
 									?>><!-- End fourth image div -->
 										<a href="/yourfolio/gallery/">
@@ -75,7 +75,7 @@
 
 									<div class="_3dface _3dface--right"<?php
 										if ( get_field('cube_image_right') ) {
-											echo 'style="background-image: url(' . get_field('cube_image_right') . '); background-size: auto 100%;"';
+											echo 'style="background-image: url(' . get_field('cube_image_right') . '); background-size: 100%;"';
 										}
 									?>><!-- End fifth image div -->
 										<a href="/yourfolio/about/">
@@ -85,7 +85,7 @@
 
 									<div class="_3dface _3dface--back"<?php
 										if ( get_field('cube_image_back') ) {
-											echo 'style="background-image: url(' . get_field('cube_image_back') . '); background-size: auto 100%;"';
+											echo 'style="background-image: url(' . get_field('cube_image_back') . '); background-size: 100%;"';
 										}
 									?>><!-- End sixth image div -->
 										<a href="/yourfolio/contact/">
